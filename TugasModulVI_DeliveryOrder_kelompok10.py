@@ -48,7 +48,7 @@ class tambahkanMakanan:
         hargaMakanan = {"gudeg": 20000, "gulai kambing": 45000, "es teh": 5000}
         return hargaMakanan.get(namaMakanan, 0)
 
-def main():#fuction non-parameter dengan non return
+def main():#fuction utama non-parameter dengan non return
     deliveryOrder = tambahkanMakanan()
 
 
