@@ -45,7 +45,7 @@ class tambahkanMakanan:
             return False
 
     def hargaMakanan(self, namaMakanan):#Method berparameter dengan return
-        hargaMakanan = {"gudeg": 20000, "gulai kambing": 45000, "es teh": 5000}
+        hargaMakanan = {"Gudeg": 20000, "Gulai Kambing": 45000, "Es Teh": 5000, "Sop Ayam": 20000, "Air Es": 2000, "Jus Jeruk": 6000}
         return hargaMakanan.get(namaMakanan, 0)
 
 def main():#fuction utama non-parameter dengan non return
@@ -58,9 +58,9 @@ def main():#fuction utama non-parameter dengan non return
         x = txt.center (100)
         print (x)
         print (100*('-'))
-        print (100*('-'))
-txt = 'MENU MAKANAN' x = txt.center (100) print (x)
-        print (100*('-'))
+        print()
+
+        print('MENU MAKANAN')
         print('1. Gudeg : Rp20000')
         print('2. Gulai Kambing : Rp45000')
         print('3. Sop Ayam : 20000')
@@ -80,11 +80,14 @@ txt = 'MENU MAKANAN' x = txt.center (100) print (x)
             namaMakanan = input('Tambahkan makanan : ')
             jumlahMakanan = int(input('Masukan jumlah yang Anda inginkan : '))
             deliveryOrder.tambahkanMakanan(namaMakanan, jumlahMakanan)
+
         elif pilihan == '2':
             deliveryOrder.liatKeranjang()
+
         elif pilihan == '3':
             total = deliveryOrder.calculatorHarga()
             print(f"Total pembayaran: Rp{total}")
+            
         elif pilihan == '4':
             if deliveryOrder.konfirmasiPesanan():
                 break
