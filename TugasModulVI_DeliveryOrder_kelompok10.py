@@ -44,9 +44,9 @@ class tambahkanMakanan:
             print('Pesanan Anda telah dibatalkan.')
             return False
 
-    def hargaMakanan(self, namaMakanan):#Method berparameter dengan return
-        hargaMakanan = {"gudeg": 20000, "gulai kambing": 45000, "es teh": 5000}
-        return hargaMakanan.get(namaMakanan, 0)
+    def hargaMakanan(self, namaMakanan):
+	    hargaMakanan = {'gudeg': 20000, 'gulai kambing': 45000, 'sop ayam': 20000, 'es teh': 5000, 'air es': 2000, 'jus jeruk': 6000}
+	    return hargaMakanan.get(namaMakanan, 0)
 
 def main():#fuction utama non-parameter dengan non return
     deliveryOrder = tambahkanMakanan()
