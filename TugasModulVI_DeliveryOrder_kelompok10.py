@@ -29,7 +29,7 @@ class tambahkanMakanan:
     def __init__(self):#method non-parameter non-return
         self.pesanItem = []
 
-    def tambahkanMakanan(self, namaMakanan, jumlahMakanan):
+    def tambahkanMakanan(self, namaMakanan, jumlahMakanan):#method berparameter non-return
         self.pesanItem.append({'namaMakanan': namaMakanan, 'jumlahMakanan': jumlahMakanan})
         print(f"{namaMakanan} sejumlah {jumlahMakanan} telah ditambahkan ke dalam keranjang!")
 
@@ -63,7 +63,7 @@ def main():#fuction utama non-parameter dengan non return
 
     while True:
         print (100*('-'))
-        txt = 'SELAMAT DATANG DI PIZZA DA HOOD'
+        txt = 'SELAMAT DATANG DI WARUNG SEDERHANA'
         x = txt.center (100)
         print (x)
         print (100*('-'))
