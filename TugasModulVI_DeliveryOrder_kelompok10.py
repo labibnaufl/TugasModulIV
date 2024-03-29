@@ -44,8 +44,8 @@ class tambahkanMakanan:
             print('Pesanan Anda telah dibatalkan.')
             return False
 
-    def hargaMakanan(self, namaMakanan):#Method berparameter dengan return
-        hargaMakanan = {"gudeg": 20000, "gulai kambing": 45000, "es teh": 5000}
+    def hargaMakanan(self, namaMakanan):
+        hargaMakanan = {'gudeg': 20000, 'gulai kambing': 45000, 'es teh': 5000 'air es': 2000, 'jus jeruk': 6000}
         return hargaMakanan.get(namaMakanan, 0)
 
 def main():#fuction utama non-parameter dengan non return
@@ -58,7 +58,15 @@ def main():#fuction utama non-parameter dengan non return
         x = txt.center (100)
         print (x)
         print (100*('-'))
-        print()
+        print (100*('-'))
+txt = 'MENU MAKANAN' x = txt.center (100) print (x)
+        print (100*('-'))
+        print('1. Gudeg : Rp20000')
+        print('2. Gulai Kambing : Rp45000')
+        print('3. Sop Ayam : 20000')
+        print('4. Es Teh : 5000')
+        print('5. Air Es: 2000')
+        print('6. Jus Jeruk : 6000')
 
         print('Silahkan pilih :\n ')
         print('1. Tambahkan Makanan ke keranjang')
