@@ -1,3 +1,12 @@
+print ('\nKelompok : 10')
+print ('Sabtu, shift kedua')
+print ('\nAnggota Kelompok :')
+print ('1. Ahmad Aldani Herlangga (21120120140168)')
+print ('2. Enrico Gathan Agung (21120123140127)')
+print ('3. Naufal Labib Nugroho (21120123130109)')
+print ('4. Rafi Rai Pasha Afandi (21120123100073)\n')
+print()
+
 print (100*('-'))
 txt = 'Silahkan Lengkapi data diri anda'
 x = txt.center (100)
